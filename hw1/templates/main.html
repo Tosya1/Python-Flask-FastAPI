@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title %}{{title}}{% endblock title %} {%block
+content %}
+<h1>Добро пожаловать в наш интернет-магазин!</h1>
+<p class="text">Выберите категорию товара</p>
+<div class="categories">
+  {% for category in categories %}
+  <div class="category">
+    <h2>{{category.name}}</h2>
+    <a href="{{category.path}}"><img src="{{category.image}}" /></a>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,133 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: darkorchid;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+header,
+footer {
+  padding: 20px;
+  background-color: lavender;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.container {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  color: darkmagenta;
+  flex-grow: 1;
+  margin: 50px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: darkorchid;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.category h2 {
+    margin-bottom: 35px;
+}
+
+.category img {
+    width: 450px;
+    height: 385px;
+    object-fit: contain;
+}
+.item, .category {
+  padding: 15px;
+  box-shadow: 12px 12px 4px -7px lavender;
+  background-color: lavenderblush;
+  text-align: center;
+}
+
+.item img {
+  width: 200px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.price {
+  color: crimson;
+}
+
+.details {
+  color: palevioletred;
+  transition: all 0.4s ease-in-out;
+}
+
+.details:hover {
+  color: firebrick;
+}
+
+.card {
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+
+.card img {
+  width: 350px;
+  height: 385px;
+  object-fit: contain;
+}
+
+.item_description {
+  padding: 15px;
+  min-width: 50%;
+  box-shadow: 12px 12px 4px -7px lavender;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+button {
+  border: none;
+  background: lavender;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px 1px thistle;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: lavenderblush;
+}
