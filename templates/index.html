@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block title %}{{title}}{% endblock title %} {%
+block content %}
+<h1>Добро пожаловать!</h1>
+<h2>Выберите нужную опцию</h2>
+<div class="items">
+  <a class="item option" href="/users/">Просмотреть список пользователей</a>
+  <a class="item option" href="/login/">Добавить пользователя</a>
+</div>
+{% endblock content %}

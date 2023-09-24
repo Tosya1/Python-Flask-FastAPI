@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block title %}{{title}}{% endblock title %} {%
+block content %}
+<div class="error">
+  <h2 class="error_title">При добавлении пользователя произошла ошибка</h2>
+  <p>Имя должно быть в диапазоне от 2 до 20 символов</p>
+  <p>Длина пароля должна быть не менее 6 символов</p>
+  <div class="button err_btn"><a href="/login/">Повторить попытку</a></div>
+</div>
+{% endblock content %}
