@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: darkorchid;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: darkmagenta;
+}
+
+header,
+footer {
+  padding: 20px;
+  background-color: lavender;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.container {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  color: darkmagenta;
+  flex-grow: 1;
+  margin: 50px 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+}
+
+.item {
+  padding: 15px;
+  box-shadow: 12px 12px 4px -7px lavender;
+  background-color: lavenderblush;
+  text-align: center;
+  min-width: 175px;
+}
+
+.option {
+  min-width: 50%;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background: lavender;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px 1px thistle;
+  transition: all 0.4s ease-in-out;
+  margin-top: 100px;
+  color: inherit;
+}
+
+.reg_button {
+  margin-top: 0;
+}
+
+.button:hover {
+  background-color: lavenderblush;
+}
+
+.button:active {
+  background-color: lavender;
+}
+
+input {
+  border: none;
+  box-shadow: 0px 4px 10px 1px thistle;
+  outline: none;
+  padding: 5px 15px;
+  background-color: lavenderblush;
+  padding: 15px 40px;
+  color: darkmagenta;
+  font-size: 18px;
+  min-width: 340px;
+}
+
+input:focus,
+input:hover {
+  background-color: lavender;
+}
+
+input::placeholder {
+  color: darkorchid;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+input::placeholder:focus {
+  color: darkorchid;
+  font-size: 18px;
+  opacity: 1;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_title {
+  color: red;
+}
+
+.err_btn {
+  margin-top: 25px;
+}
